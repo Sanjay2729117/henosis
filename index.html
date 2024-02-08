@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-[Poppins] h-screen relative"> 
+    <div class="full z-[-10] absolute top-0 left-0">
+        <div class="stars z-[-10]">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>   
+        </div>
+<header class="bg-transparent">
+    <nav class="flex justify-between items-center w-[92%] mx-auto bg-transparent">
+        <div>
+            <img class="w-28 md:w-32" src="./assets/ngp-hover-logo (1).png" alt="...">
+        </div>
+        <div class="toggle h-[100%] py-2 z-2 w-2/4  duration-1000 md:z-0  md:w-auto md:static absolute  left-[-100%] top-[9%] left-0 md:min-h-fit flex items-center px-5" >
+            <ul class="flex md:flex-row flex-col md:items-center items-start justify-start md:gap-[4vw] gap-10">
+                <li><a class="text-white hover:text-cyan-500" href="#">Home</a></li>
+                <li><a class="text-white hover:text-cyan-500" href="#">About</a></li>
+                <li><a class="text-white hover:text-cyan-500" href="#">Events</a></li>
+                <li><a class="text-white hover:text-cyan-500" href="#">Services</a></li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-6">
+            <button class="bg-[#AABBCC] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:text-lg text-sm mt-2 mb-2">Register Now</button>
+            <ion-icon onclick="toggle(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+    </nav>
+</header>
+<section class="w-full mt-16 z-5">
+    <h1 class="text-center md:text-8xl text-7xl font-extrabold text-transparent bg-clip-text bg-center bg-no-repeat bg-cover">HENOSIS 2K24</h1>
+    <div class="flex align-center justify-center gap-4 md:gap-10 mt-24 time flex-wrap z-10">
+        <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20">
+            <p class="Days  md:text-3xl color1 text-md">00</p>
+            <span class="md:text-3xl color1 text-md text-center">Days</span>
+    </div>
+        <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20" >
+            <p class="Hours  md:text-3xl color1 text-md">00</p>
+            <span class="md:text-3xl text-md text-center color1">Hours</span>
+        </div> <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20">
+            <p class="Min md:text-3xl color1 text-md">00</p>
+            <span class="md:text-3xl text-md text-center color1">Minutes</span>
+        </div> <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20">
+            <p class="secs  md:text-3xl color1 text-md">00</p>
+            <span class="md:text-3xl text-md color1">Seconds</span>
+        </div>
+
+    </div>
+</section>
+<script>
+    function toggle(e){
+        e.name=e.name==='menu'?'close':'menu';
+            document.querySelector(".toggle").classList.toggle("left-[0%]");
+       
+
+    }
+
+   let countdate=new Date("Mar 12,2024 00:00:00").getTime(); 
+   setInterval(()=>{
+    var now=new Date().getTime();
+    var distance=countdate-now;
+
+    var days=Math.floor(distance/(1000*60*60*24));
+    var hrs=Math.floor(distance%(1000*60*60*24)/(1000*60*60));
+    var min=Math.floor(distance%(1000*60*60)/(1000*60));
+    var sec=Math.floor(distance%(1000*60)/1000);
+
+    document.querySelector(".Days").innerHTML=days;
+    document.querySelector(".Hours").innerHTML=hrs;
+    document.querySelector(".Min").innerHTML=min;
+    document.querySelector(".secs").innerHTML=sec;
+   },1000);
+   console.log(countdate);
+</script>
+<!--https://cdn-icons-png.flaticon.com/512/5968/5968204.png-->
+</body>
+</html>
