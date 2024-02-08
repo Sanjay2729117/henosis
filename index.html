@@ -66,44 +66,76 @@
             <div class="star"></div>
           </div>   
         </div>
-<header class="bg-transparent">
-    <nav class="flex justify-between items-center w-[92%] mx-auto bg-transparent">
+<header class="bg-transparent z-5">
+    <nav class="flex z-16 justify-between items-center w-[92%] mx-auto bg-transparent">
         <div>
             <img class="w-28 md:w-32" src="./assets/ngp-hover-logo (1).png" alt="...">
         </div>
-        <div class="toggle h-[100%] py-2 z-2 w-2/4  duration-1000 md:z-0  md:w-auto md:static absolute  left-[-100%] top-[9%] left-0 md:min-h-fit flex items-center px-5" >
+        <div class="md:bg-transparent bg-[#0d1d31] toggle h-[100%] py-2  w-2/4  duration-1000 md:z-0 z-20 md:w-auto md:static absolute  left-[-100%] top-[9%] left-0 md:min-h-fit flex items-center px-5" >
             <ul class="flex md:flex-row flex-col md:items-center items-start justify-start md:gap-[4vw] gap-10">
                 <li><a class="text-white hover:text-cyan-500" href="#">Home</a></li>
                 <li><a class="text-white hover:text-cyan-500" href="#">About</a></li>
                 <li><a class="text-white hover:text-cyan-500" href="#">Events</a></li>
-                <li><a class="text-white hover:text-cyan-500" href="#">Services</a></li>
+                <li><a class="text-white hover:text-cyan-500" href="#">Details</a></li>
             </ul>
         </div>
         <div class="flex items-center gap-6">
-            <button class="bg-[#AABBCC] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:text-lg text-sm mt-2 mb-2">Register Now</button>
-            <ion-icon onclick="toggle(this)" name="menu" class="text-3xl cursor-pointer md:hidden" color="primary-contrast"></ion-icon>
+            <button class="bg-[#87acec] text-white px-5 py-2 rounded-full hover:bg-[#a6c1ee] md:text-lg text-sm mt-2 mb-2">Register Now</button>
+            <ion-icon onclick="toggle(this)" name="menu" class="text-3xl cursor-pointer md:hidden" color="primary"></ion-icon>
         </div>
     </nav>
 </header>
-<section class="w-full mt-16 z-5">
+<section class="w-full h-full mt-16 z-[-2]">
     <h1 class="text-center md:text-8xl text-7xl font-extrabold text-transparent bg-clip-text bg-center bg-no-repeat bg-cover">HENOSIS 2K24</h1>
-    <div class="flex align-center justify-center gap-4 md:gap-10 mt-24 time flex-wrap z-10">
-        <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20">
+    <h2 class="text-center text-[#663399]  md:text-6xl text-5xl font-bold mt-24">COUNT <span class="text-[#33cc99]">DOWN</span></h2>
+    <div class="flex items-center justify-center gap-4 md:gap-8 mt-24 time flex-wrap z-10">
+        <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 min-w-20 min-h-20">
             <p class="Days  md:text-3xl color1 text-md">00</p>
             <span class="md:text-3xl color1 text-md text-center">Days</span>
     </div>
-        <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20" >
+        <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 min-w-20 min-h-20" >
             <p class="Hours  md:text-3xl color1 text-md">00</p>
             <span class="md:text-3xl text-md text-center color1">Hours</span>
-        </div> <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20">
+        </div> <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 min-w-20 min-h-20">
             <p class="Min md:text-3xl color1 text-md">00</p>
             <span class="md:text-3xl text-md text-center color1">Minutes</span>
-        </div> <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 w-20 h-20">
+        </div> <div class="flex flex-col justify-center items-center morph md:w-40 md:h-40 min-w-20 min-h-20">
             <p class="secs  md:text-3xl color1 text-md">00</p>
             <span class="md:text-3xl text-md color1">Seconds</span>
         </div>
 
     </div>
+</section>
+<section class="relative">
+    <div class="background absolute top-0 md:mt-[-18vh]"></div>
+    
+    <div class="absolute grid place-items-center h-100% w-100% top-[-80px]">
+<div class="morph w-[80%] h-fit mt-16 p-5 flex md:flex-row flex-col z-96">
+    <div>
+<div class="text-[skyblue] md:text-4xl font-bold text-lg">About Henosis 2k24</div>
+<div class="text-white mt-4 md:text-xl text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eligendi, quia esse possimus pariatur fugit exercitationem consequatur, itaque a iure quod ex tempora quis in rerum autem culpa sequi distinctio.</div>
+
+</div>
+<img src="./assets/69f30a9203334871de8306ff6c477c59.gif" class=" md:w-[50%] w-[90%] ml-[5%] mt-5 z-96" alt="">
+</div>
+</div>
+</section>
+<section class="relative ">
+ <div class="absolute background1 md:mt-[82vh] top-0"></div>
+    <div class="w-full h-full grid grid-cols-3 gap-y-3 place-items-center absolute top-[100vh]">
+<div class="w-[30vw] h-[30vh] rounded-lg morph flex justify-center items-center">
+    
+    <p class="text-white text-md font-bold">CODING EVENTS</p>
+  </div>
+<div class="w-[30vw] morph h-[30vh] rounded-lg flex justify-center items-center"><p class="text-white text-md font-bold">CODING EVENTS</p></div>
+<div class="w-[30vw] morph h-[30vh] rounded-lg flex justify-center items-center"><p class="text-white text-md font-bold">CODING EVENTS</p></div>
+<div class="w-[30vw] morph h-[30vh] rounded-lg flex justify-center items-center"><p class="text-white text-md font-bold">CODING EVENTS</p></div>
+<div class="w-[30vw] h-[30vh] flex flex-col gap-4">
+    <div class="h-[15vh] w-[30vw] morph w-36 rounded-lg flex justify-center items-center"><p class="text-white text-md font-bold">CODING EVENTS</p></div>
+    <div class="h-[15vh] w-[30vw] morph w-36 rounded-lg flex justify-center items-center"><p class="text-white text-md font-bold">CODING EVENTS</p></div>
+</div>
+<div class="w-[30vw] morph h-[30vh] rounded-lg flex justify-center items-center"><p class="text-white text-md font-bold">CODING EVENTS</p></div>
+ </div>
 </section>
 <script>
     function toggle(e){
