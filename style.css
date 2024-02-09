@@ -1,6 +1,9 @@
 h1 {
   background-image: url("./assets/image_processing20201109-12662-1v80isy.gif");
 }
+html{
+scroll-behavior:smooth;
+} 
 
 .morph {
   /* From https://css.glass */
